@@ -4,7 +4,9 @@ import { View } from 'react-native'
 class ListClub extends React.Component {
     render() {
         return (
-           <View></View> 
+           <View>
+               
+           </View> 
         )
     }
 }

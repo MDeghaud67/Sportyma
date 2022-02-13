@@ -1,10 +1,12 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, Text } from 'react-native'
 
 class Club extends React.Component {
     render() {
         return (
-           <View></View> 
+           <View>
+               <Text></Text>
+           </View> 
         )
     }
 }
