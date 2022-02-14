@@ -1,10 +1,12 @@
-import React from 'react'
-import { View } from 'react-native'
+import React from 'react';
+import { View, Text } from 'react-native';
 
 class Player extends React.Component {
     render() {
         return (
-            <View></View>
+            <View>
+                <Text>Nom du joueur</Text>
+            </View>
         )
     }
 }

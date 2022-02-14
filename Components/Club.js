@@ -1,11 +1,13 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View, Button } from 'react-native';
+import clubData from '../Helpers/clubs';
 
 class Club extends React.Component {
     render() {
+        const club = this.props.club
         return (
            <View>
-               <Text></Text>
+               <Button title={club.name} onPress={() => {}}/>
            </View> 
         )
     }
