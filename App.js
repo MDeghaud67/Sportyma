@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import ListClub from './Components/ListClub';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ListClub/>
+    /*<View style={styles.container}>
       <Text>Bienvenue dans l'application Sportyma</Text>
       <StatusBar style="auto" />
-    </View>
+    </View>*/
   );
 }
 

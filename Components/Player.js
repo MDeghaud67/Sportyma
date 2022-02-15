@@ -3,9 +3,11 @@ import { View, Text } from 'react-native';
 
 class Player extends React.Component {
     render() {
+        const player = this.props.player
         return (
             <View>
-                <Text>Nom du joueur</Text>
+                <Text>{player.firstName}</Text>
+                <Text>{player.lastName}</Text>
             </View>
         )
     }

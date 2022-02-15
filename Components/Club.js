@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Button } from 'react-native';
-import clubData from '../Helpers/clubs';
+//import clubData from '../Helpers/clubs';
 
 class Club extends React.Component {
     render() {
