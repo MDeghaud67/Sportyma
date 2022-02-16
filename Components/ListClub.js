@@ -1,20 +1,31 @@
 import React from 'react';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, StyleSheet } from 'react-native';
 import clubData from '../Helpers/clubs';
 import Club from './Club';
 
 class ListClub extends React.Component {
     render() {
         return (
-           <View>
+           <View style={styles.main_container}>
                <FlatList
+               
                     data={clubData}
-                    renderItem={(item) => item.id.toString()}
-                    keyExtractor={({item}) => <Club club={item}/>}
+                    keyExtractor={(item) => item.id.toString()}
+                    renderItem={({item}) => <Club club={item}/>}
                 />
            </View> 
         )
     }
 }
+
+const styles = StyleSheet.create({
+    main_container: {
+        flex: 1,
+        marginTop: 50
+    },
+    title_text: {
+      
+    }
+  })
 
 export default ListClub
